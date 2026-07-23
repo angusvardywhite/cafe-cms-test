@@ -3,91 +3,110 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Bread & Bean is an independent neighbourhood café serving homemade brunch, lunch and coffee.">
-  <title>Bread & Bean | Neighbourhood café</title>
+  <meta name="description" content="Bread & Bean is an independent neighbourhood café serving homemade brunch, lunch and coffee in Archway.">
+  <title>Bread & Bean | Archway neighbourhood café</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/styles.css">
   <script src="/assets/site.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <span>Family run · Est. 2011</span>
+    <span>37 Junction Road · Archway</span>
+  </div>
   <header class="site-header">
-    <a class="brand" href="/" aria-label="Bread and Bean home">
-      <span>Bread</span><i>&amp;</i><span>Bean</span>
-    </a>
+    <a class="brand" href="/" aria-label="Bread and Bean home">Bread <i>&amp;</i> Bean</a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-      <a href="/story.html">Our story</a>
-      <a href="/menu.html">Menu</a>
-      <a href="/gallery.html">Photos</a>
-      <a href="/contact.html">Visit us</a>
+      <a href="/story.html"><span>01</span> Our story</a>
+      <a href="/menu.html"><span>02</span> Menu</a>
+      <a href="/gallery.html"><span>03</span> Photos</a>
+      <a href="/contact.html"><span>04</span> Visit</a>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Archway · North London</p>
-        <h1>Good food.<br><em>Proper coffee.</em></h1>
-        <p class="hero-intro">A family-run neighbourhood café serving homemade brunch, generous lunches, cakes and carefully made coffee.</p>
-        <div class="button-row">
-          <a class="button button-dark" href="/menu.html">See the menu</a>
-          <a class="text-link" href="/contact.html">Plan your visit <span>↗</span></a>
+    <section class="home-hero">
+      <div class="hero-brand-panel">
+        <p class="index-label">Independent café · North London</p>
+        <img class="hero-logo" src="/assets/bread-and-bean-logo.webp" alt="Bread and Bean, illustrated owl logo">
+        <div class="hero-statement">
+          <h1>Homemade food.<br><em>Neighbourly spirit.</em></h1>
+          <p>Breakfast, lunch, cakes and carefully made coffee—served without fuss in the heart of Archway.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-ink" href="/menu.html">Browse the menu <span>→</span></a>
+          <a class="underlined-link" href="/contact.html">Opening times &amp; directions</a>
         </div>
       </div>
-      <div class="image-placeholder hero-placeholder" role="img" aria-label="Placeholder for café hero photograph">
-        <span>Hero photograph</span>
-        <small>Add your image later</small>
-      </div>
+      <figure class="hero-photo">
+        <img src="/assets/uploads/img-20200330-wa0036.webp" alt="Inside Bread and Bean café looking onto Junction Road">
+        <figcaption><span>01</span> Inside Bread &amp; Bean, Archway</figcaption>
+      </figure>
     </section>
 
-    <section class="marquee" aria-label="What we serve">
-      <span>Breakfast</span><i>✦</i><span>Lunch</span><i>✦</i><span>Cakes</span><i>✦</i><span>Coffee</span>
+    <section class="service-ledger" aria-label="What Bread and Bean serves">
+      <p>From the kitchen</p>
+      <ul>
+        <li><span>01</span> Brunch</li>
+        <li><span>02</span> Lunch</li>
+        <li><span>03</span> Cakes</li>
+        <li><span>04</span> Coffee</li>
+      </ul>
     </section>
 
-    <section class="welcome split-section">
+    <section class="home-intro ruled-section">
+      <div class="section-number">01 / Welcome</div>
       <div>
-        <p class="eyebrow">A local favourite</p>
-        <h2>Made here,<br>served warmly.</h2>
+        <p class="large-copy">A proper local café: warm, generous and made by hand.</p>
       </div>
       <div class="body-copy">
         <p>Everything starts with fresh ingredients, free-range eggs and a kitchen that makes things properly. Come for a quick coffee, a long brunch or a slice of cake at the window.</p>
-        <a class="text-link" href="/story.html">Read our story <span>↗</span></a>
+        <a class="underlined-link" href="/story.html">The Bread &amp; Bean story →</a>
       </div>
     </section>
 
-    <section class="feature-grid">
-      <a class="feature-card feature-menu" href="/menu.html">
-        <p class="eyebrow">Brunch · Lunch · Drinks</p>
-        <h2>Our menu</h2>
-        <span>Explore <b>↗</b></span>
-      </a>
-      <a class="feature-card feature-photo" href="/gallery.html">
-        <div class="image-placeholder card-placeholder" aria-hidden="true"><span>Gallery image</span></div>
+    <section class="home-cards">
+      <a class="editorial-card menu-card" href="/menu.html">
+        <span class="card-index">02 / Food &amp; drink</span>
         <div>
-          <p class="eyebrow">Inside Bread &amp; Bean</p>
-          <h2>Photos</h2>
-          <span>Take a look <b>↗</b></span>
+          <p>Served all day</p>
+          <h2>Brunch,<br>lunch &amp; coffee</h2>
         </div>
+        <span class="card-link">View our menu <b>→</b></span>
+      </a>
+      <a class="editorial-card gallery-card" href="/gallery.html">
+        <span class="card-index">03 / The café</span>
+        <div class="paper-photo-placeholder">
+          <span>Photographs from<br>Junction Road</span>
+        </div>
+        <span class="card-link">See the gallery <b>→</b></span>
       </a>
     </section>
 
-    <section class="visit-strip">
-      <p class="eyebrow">Find us in Archway</p>
-      <h2>37 Junction Road<br>London N19 5QU</h2>
-      <a class="button button-light" href="/contact.html">Opening times &amp; directions</a>
+    <section class="visit-callout">
+      <div class="coffee-ring" aria-hidden="true"></div>
+      <p class="index-label">Come and find us</p>
+      <h2>37 Junction Road<br>Archway, London N19</h2>
+      <p>A short walk from Archway station. Pull up a chair.</p>
+      <a class="button button-paper" href="/contact.html">Plan your visit <span>→</span></a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <a class="brand brand-footer" href="/"><span>Bread</span><i>&amp;</i><span>Bean</span></a>
-    <p>Independent café · Archway, London</p>
     <div>
-      <a href="#" aria-label="Instagram placeholder">Instagram</a>
-      <a href="#" aria-label="Facebook placeholder">Facebook</a>
+      <a class="footer-brand" href="/">Bread and Bean</a>
+      <p>Independent café · Archway, London</p>
     </div>
+    <div class="footer-links">
+      <a href="#">Instagram ↗</a>
+      <a href="#">Facebook ↗</a>
+      <a href="/admin/">Admin</a>
+    </div>
+    <p class="footer-note">Fresh food · Free-range eggs · Made here</p>
   </footer>
 </body>
 </html>

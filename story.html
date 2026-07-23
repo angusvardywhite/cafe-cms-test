@@ -7,44 +7,62 @@
   <title>Our Story | Bread & Bean</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/styles.css">
   <script src="/assets/site.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="utility-bar"><span>Family run · Est. 2011</span><span>37 Junction Road · Archway</span></div>
   <header class="site-header">
-    <a class="brand" href="/" aria-label="Bread and Bean home"><span>Bread</span><i>&amp;</i><span>Bean</span></a>
+    <a class="brand" href="/" aria-label="Bread and Bean home">Bread <i>&amp;</i> Bean</a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-      <a class="active" href="/story.html">Our story</a><a href="/menu.html">Menu</a><a href="/gallery.html">Photos</a><a href="/contact.html">Visit us</a>
+      <a class="active" href="/story.html"><span>01</span> Our story</a>
+      <a href="/menu.html"><span>02</span> Menu</a>
+      <a href="/gallery.html"><span>03</span> Photos</a>
+      <a href="/contact.html"><span>04</span> Visit</a>
     </nav>
   </header>
   <main id="main">
-    <header class="page-hero page-hero-story">
-      <p class="eyebrow">Our story</p>
+    <header class="page-masthead">
+      <div class="masthead-index">01 / Our story</div>
       <h1>A café made<br><em>for its neighbourhood.</em></h1>
+      <p>Family owned, independently minded and always ready with another cup.</p>
     </header>
-    <section class="story-layout">
-      <div class="image-placeholder portrait-placeholder" role="img" aria-label="Placeholder for a photograph of the café owners">
-        <span>People or café photograph</span><small>Add your image later</small>
-      </div>
+    <section class="story-feature">
+      <figure class="tactile-placeholder tall-placeholder">
+        <span>Portrait or café photograph</span>
+        <small>Add through the site files later</small>
+      </figure>
       <div class="story-copy">
-        <p class="lead">Bread &amp; Bean is a family-owned café dedicated to making everyone feel welcome—and very well fed.</p>
-        <p>Whether you are grabbing a coffee first thing, catching up over a leisurely brunch, meeting for a tentative first date or simply eating excellent cake, this is a place to settle in.</p>
-        <p>Our food is homemade using fresh ingredients, free-range eggs and produce from suppliers we trust. The atmosphere is unfussy, friendly and unmistakably local.</p>
-        <a class="button button-dark" href="/menu.html">Explore our menu</a>
+        <p class="drop-lead">Bread &amp; Bean is a family-owned café dedicated to making everyone feel welcome—and very well fed.</p>
+        <div class="story-columns">
+          <p>Whether you are grabbing a coffee first thing, catching up over a leisurely brunch, meeting for a tentative first date or simply eating excellent cake, this is a place to settle in.</p>
+          <p>Our food is homemade using fresh ingredients, free-range eggs and produce from suppliers we trust. The atmosphere is unfussy, friendly and unmistakably local.</p>
+        </div>
+        <a class="button button-ink" href="/menu.html">Explore our menu <span>→</span></a>
       </div>
     </section>
-    <section class="quote-section">
+    <section class="press-quote">
+      <img src="/assets/bread-and-bean-logo.webp" alt="" aria-hidden="true">
       <blockquote>“Very pleasant place to while away an hour or two.”</blockquote>
-      <p>— Time Out London</p>
+      <p>Time Out London · March 2014</p>
+    </section>
+    <section class="principles ruled-section">
+      <div class="section-number">What matters</div>
+      <div><h2>Simple things,<br>done properly.</h2></div>
+      <ol>
+        <li><span>01</span> Homemade food</li>
+        <li><span>02</span> Fresh ingredients</li>
+        <li><span>03</span> A genuine welcome</li>
+      </ol>
     </section>
   </main>
   <footer class="site-footer">
-    <a class="brand brand-footer" href="/"><span>Bread</span><i>&amp;</i><span>Bean</span></a>
-    <p>Independent café · Archway, London</p>
-    <div><a href="#">Instagram</a><a href="#">Facebook</a></div>
+    <div><a class="footer-brand" href="/">Bread and Bean</a><p>Independent café · Archway, London</p></div>
+    <div class="footer-links"><a href="#">Instagram ↗</a><a href="#">Facebook ↗</a><a href="/admin/">Admin</a></div>
+    <p class="footer-note">Fresh food · Free-range eggs · Made here</p>
   </footer>
 </body>
 </html>

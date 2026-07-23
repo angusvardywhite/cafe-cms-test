@@ -7,34 +7,42 @@
   <title>Photos | Bread & Bean</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/styles.css">
   <script src="/assets/site.js" defer></script>
   <script src="/assets/gallery.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="utility-bar"><span>Family run · Est. 2011</span><span>37 Junction Road · Archway</span></div>
   <header class="site-header">
-    <a class="brand" href="/" aria-label="Bread and Bean home"><span>Bread</span><i>&amp;</i><span>Bean</span></a>
+    <a class="brand" href="/" aria-label="Bread and Bean home">Bread <i>&amp;</i> Bean</a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-      <a href="/story.html">Our story</a><a href="/menu.html">Menu</a><a class="active" href="/gallery.html">Photos</a><a href="/contact.html">Visit us</a>
+      <a href="/story.html"><span>01</span> Our story</a>
+      <a href="/menu.html"><span>02</span> Menu</a>
+      <a class="active" href="/gallery.html"><span>03</span> Photos</a>
+      <a href="/contact.html"><span>04</span> Visit</a>
     </nav>
   </header>
   <main id="main">
-    <header class="page-hero gallery-heading">
-      <p class="eyebrow">A little look inside</p>
-      <h1>Photos</h1>
-      <p>Add, remove and reorder photographs through the admin page.</p>
+    <header class="page-masthead gallery-masthead">
+      <div class="masthead-index">03 / The café</div>
+      <h1>A look<br><em>inside.</em></h1>
+      <p>Food, coffee and everyday life on Junction Road.</p>
     </header>
+    <div class="gallery-intro">
+      <p>Field notes from our kitchen, counter and tables.</p>
+      <span>Archway · London N19</span>
+    </div>
     <section id="gallery-grid" class="gallery-grid" aria-live="polite">
-      <p class="loading-message">Loading gallery…</p>
+      <p class="loading-message">Loading the contact sheet…</p>
     </section>
   </main>
   <footer class="site-footer">
-    <a class="brand brand-footer" href="/"><span>Bread</span><i>&amp;</i><span>Bean</span></a>
-    <p>Independent café · Archway, London</p>
-    <div><a href="#">Instagram</a><a href="#">Facebook</a></div>
+    <div><a class="footer-brand" href="/">Bread and Bean</a><p>Independent café · Archway, London</p></div>
+    <div class="footer-links"><a href="#">Instagram ↗</a><a href="#">Facebook ↗</a><a href="/admin/">Admin</a></div>
+    <p class="footer-note">Fresh food · Free-range eggs · Made here</p>
   </footer>
 </body>
 </html>
