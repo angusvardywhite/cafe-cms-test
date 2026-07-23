@@ -1,6 +1,6 @@
 # Bread & Bean CMS test
 
-A static multi-page café website with editable menu and gallery content using Decap CMS, Netlify Identity and Git Gateway.
+A static multi-page café website with editable menu and gallery content using Decap CMS and GitHub authentication.
 
 ## Files
 
@@ -9,18 +9,23 @@ A static multi-page café website with editable menu and gallery content using D
 - Decap CMS is configured in `admin/config.yml`.
 - Uploaded gallery images are stored in `assets/uploads/`.
 
-## Deploy and enable the login
+## Deploy and enable GitHub login
 
 1. Push this repository to GitHub with `main` as the default branch.
 2. In Netlify, choose **Add new project → Import an existing project** and select this repository.
 3. Netlify will detect `netlify.toml`; no build command is required and the publish directory is `.`.
-4. In Netlify, open **Integrations → Identity**, enable Netlify Identity and set registration to **Invite only**.
-5. Under Identity services, enable **Git Gateway**.
-6. Invite your email address from the Identity user list.
-7. Open the invitation email, set your password, then visit `https://YOUR-SITE.netlify.app/admin/`.
+4. In GitHub, open **Settings → Developer settings → OAuth Apps** and register a new OAuth application.
+5. Use the deployed Netlify URL as the **Homepage URL**.
+6. Set the **Authorization callback URL** to `https://api.netlify.com/auth/done`.
+7. Copy the generated Client ID and create a Client Secret.
+8. In Netlify, open **Project configuration → Access & security → OAuth**.
+9. Under **Authentication providers**, install GitHub and enter the Client ID and Client Secret.
+10. Visit `https://YOUR-SITE.netlify.app/admin/` and choose **Login with GitHub**.
 
 Edits made in the admin page are committed to the GitHub repository. Netlify then republishes the changed site automatically.
 
+Anyone using the CMS must have a GitHub account with write access to `angusvardywhite/cafe-cms-test`. Add the café owner as a repository collaborator before they try to log in.
+
 ## Local preview
 
-Serve the repository through a local web server rather than opening the HTML files directly, because the menu and gallery load JSON files. Authentication and publishing only work on the deployed Netlify site after Identity and Git Gateway are enabled.
+Serve the repository through a local web server rather than opening the HTML files directly, because the menu and gallery load JSON files. GitHub authentication and publishing only work after the site is deployed and the GitHub OAuth provider is configured in Netlify.
