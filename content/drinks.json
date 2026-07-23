@@ -1,0 +1,58 @@
+{
+  "sections": [
+    {
+      "kicker": "Union coffee",
+      "title": "Coffee",
+      "items": [
+        {
+          "name": "Flat white",
+          "description": "",
+          "price": "£3.70",
+          "dietary": ""
+        },
+        {
+          "name": "Cappuccino / latte",
+          "description": "",
+          "price": "£3.80",
+          "dietary": ""
+        },
+        {
+          "name": "Americano",
+          "description": "",
+          "price": "£3.50",
+          "dietary": ""
+        },
+        {
+          "name": "Mocha",
+          "description": "",
+          "price": "£4.10",
+          "dietary": ""
+        }
+      ]
+    },
+    {
+      "kicker": "Freshly made",
+      "title": "Cold drinks",
+      "items": [
+        {
+          "name": "Homemade lemonade",
+          "description": "",
+          "price": "£4.70",
+          "dietary": "VG"
+        },
+        {
+          "name": "Merry Berry smoothie",
+          "description": "Blackberry, strawberry, blueberry and banana",
+          "price": "£6.50",
+          "dietary": "VG"
+        },
+        {
+          "name": "Groovy Green smoothie",
+          "description": "Avocado, spinach, apple and mint",
+          "price": "£6.50",
+          "dietary": "VG"
+        }
+      ]
+    }
+  ]
+}

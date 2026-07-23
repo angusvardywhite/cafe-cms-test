@@ -1,0 +1,93 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+publish_mode: simple
+
+collections:
+  - name: menu
+    label: Menu
+    files:
+      - name: brunch
+        label: Brunch
+        file: content/brunch.json
+        format: json
+        fields:
+          - label: Sections
+            name: sections
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Small heading, name: kicker, widget: string, required: false }
+              - { label: Section title, name: title, widget: string }
+              - label: Dishes
+                name: items
+                widget: list
+                summary: "{{fields.name}} — {{fields.price}}"
+                fields:
+                  - { label: Dish name, name: name, widget: string }
+                  - { label: Description, name: description, widget: text, required: false }
+                  - { label: Price, name: price, widget: string }
+                  - { label: Dietary label, name: dietary, widget: select, options: ["", "V", "VG"], required: false }
+      - name: lunch
+        label: Lunch
+        file: content/lunch.json
+        format: json
+        fields:
+          - label: Sections
+            name: sections
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Small heading, name: kicker, widget: string, required: false }
+              - { label: Section title, name: title, widget: string }
+              - label: Dishes
+                name: items
+                widget: list
+                summary: "{{fields.name}} — {{fields.price}}"
+                fields:
+                  - { label: Dish name, name: name, widget: string }
+                  - { label: Description, name: description, widget: text, required: false }
+                  - { label: Price, name: price, widget: string }
+                  - { label: Dietary label, name: dietary, widget: select, options: ["", "V", "VG"], required: false }
+      - name: drinks
+        label: Drinks
+        file: content/drinks.json
+        format: json
+        fields:
+          - label: Sections
+            name: sections
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Small heading, name: kicker, widget: string, required: false }
+              - { label: Section title, name: title, widget: string }
+              - label: Drinks
+                name: items
+                widget: list
+                summary: "{{fields.name}} — {{fields.price}}"
+                fields:
+                  - { label: Drink name, name: name, widget: string }
+                  - { label: Description, name: description, widget: text, required: false }
+                  - { label: Price, name: price, widget: string }
+                  - { label: Dietary label, name: dietary, widget: select, options: ["", "V", "VG"], required: false }
+
+  - name: gallery
+    label: Photo gallery
+    files:
+      - name: photos
+        label: Gallery photos
+        file: content/gallery.json
+        format: json
+        fields:
+          - label: Photos
+            name: photos
+            widget: list
+            summary: "{{fields.caption}}"
+            fields:
+              - { label: Image, name: image, widget: image, required: false }
+              - { label: Alternative text, name: alt, widget: string, hint: "Describe the image for visitors using screen readers." }
+              - { label: Caption, name: caption, widget: string, required: false }

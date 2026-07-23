@@ -1,0 +1,52 @@
+{
+  "sections": [
+    {
+      "kicker": "Made to order",
+      "title": "Lunch",
+      "items": [
+        {
+          "name": "Pumpkin & courgette fritters",
+          "description": "Roasted beetroot, tomato, avocado, quinoa, leaves and house dressing",
+          "price": "£13.00",
+          "dietary": "VG"
+        },
+        {
+          "name": "Kimchi and cheese toastie",
+          "description": "Served hot on white bread",
+          "price": "£10.00",
+          "dietary": "V"
+        },
+        {
+          "name": "Roast chicken sandwich",
+          "description": "Roast chicken, grilled sweetcorn, mayonnaise and mixed leaves",
+          "price": "£13.00",
+          "dietary": ""
+        },
+        {
+          "name": "Grilled vegetable and halloumi sandwich",
+          "description": "Red peppers, sweet potato, halloumi and pesto",
+          "price": "£12.50",
+          "dietary": "V"
+        }
+      ]
+    },
+    {
+      "kicker": "On the side",
+      "title": "Small bites",
+      "items": [
+        {
+          "name": "Hand-cut chips with aioli",
+          "description": "",
+          "price": "£4.50",
+          "dietary": "V"
+        },
+        {
+          "name": "Halloumi sticks with salsa",
+          "description": "",
+          "price": "£5.50",
+          "dietary": "V"
+        }
+      ]
+    }
+  ]
+}

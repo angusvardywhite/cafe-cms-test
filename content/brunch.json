@@ -1,0 +1,58 @@
+{
+  "sections": [
+    {
+      "kicker": "Morning favourites",
+      "title": "Brunch",
+      "items": [
+        {
+          "name": "Home-made granola",
+          "description": "Greek yoghurt, poached pear, fresh apple, berries and cinnamon",
+          "price": "£8.50",
+          "dietary": "V"
+        },
+        {
+          "name": "Breakfast bun",
+          "description": "Scrambled eggs, Red Leicester, sausage patty and sriracha mayo",
+          "price": "£10.00",
+          "dietary": ""
+        },
+        {
+          "name": "Buttermilk pancakes",
+          "description": "Whipped vanilla cream, banana compote, berries and maple syrup",
+          "price": "£13.00",
+          "dietary": "V"
+        },
+        {
+          "name": "Turkish eggs",
+          "description": "Flatbread, yoghurt, poached eggs, paprika butter, onion and dill",
+          "price": "£12.50",
+          "dietary": "V"
+        },
+        {
+          "name": "Full English",
+          "description": "Homemade baked beans, bacon, sausage, egg, tomato, mushroom and sourdough",
+          "price": "£16.00",
+          "dietary": ""
+        }
+      ]
+    },
+    {
+      "kicker": "Build your plate",
+      "title": "Add-ons",
+      "items": [
+        {
+          "name": "Avocado, bacon or halloumi",
+          "description": "",
+          "price": "£4.00",
+          "dietary": ""
+        },
+        {
+          "name": "Egg, tomato or mushroom",
+          "description": "",
+          "price": "£2.50",
+          "dietary": ""
+        }
+      ]
+    }
+  ]
+}
